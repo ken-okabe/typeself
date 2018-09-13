@@ -2,12 +2,12 @@ import { log } from "./log.js";
 import { Type, isType } from "../modules/typeself.js";
 const test_typeself = () => {
     log("=Are you a member??? ========= ");
-    const Member = (a) => Type(Member)(a);
+    const Member = (a) => Type(Member)([a]);
     const alice = "Alice";
     const bob = Member("Bob");
-    log(alice);
+    log("Member status of " + alice); //Member status of Alice
     log(isType(Member)(alice)); //false
-    log(bob);
+    log("Member status of " + bob); //Member status of Bob
     log(isType(Member)(bob)); //true
     log("=Is this a special operation??========= ");
     const specialOperation = (f) => Type(specialOperation)(f);

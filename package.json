@@ -1,6 +1,6 @@
 {
   "name": "typeself",
-  "version": "0.9.1",
+  "version": "0.9.4",
   "description": "",
   "main": "./index.js",
   "module": "./dist/build/modules/typeself.js",
