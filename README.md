@@ -1,4 +1,4 @@
-# self-type
+# typeself
 
 Provides a unique type to any data in JavaScript/TypeScript.
 
@@ -9,7 +9,7 @@ Native data is transparently replaced by Typed data by ES6 [Proxy](https://devel
 ## ESM
 
 ```js
-import { Type, isType } from "./dist/build/modules/self-type.js";
+import { Type, isType } from "./dist/build/modules/typeself.js";
 ```
 
 ## CJS
@@ -19,13 +19,13 @@ import { Type, isType } from "./dist/build/modules/self-type.js";
 Using npm:
 
 ```sh
-$ npm i self-type
+$ npm i typeself
 ```
 
 In Node.js:
 
 ```js
-const { Type, isType } = require("self-type");
+const { Type, isType } = require("typeself");
 ```
 
 ## Test
@@ -34,12 +34,12 @@ const { Type, isType } = require("self-type");
 $ node -r esm ./dist/build/index.js
 ```
 
-### ./test/test-self-type.js
+### ./test/test-typeself.js
 
 
 ```js
 import { log } from "./log.js";
-import { Type, isType } from "../modules/self-type.js";
+import { Type, isType } from "../modules/typeself.js";
 const test_self_type = () => {
     log("=Are you a member??? ========= ");
     const Member = (a) => Type(Member)(a);
