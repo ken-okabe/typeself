@@ -1,46 +1,6 @@
-# self-type
-
-Provides a unique type to any data in JavaScript/TypeScript.
-
-The same concept introduced in [SICP](http://mitpress.mit.edu/sites/default/files/sicp/index.html) as "TypeTag". 
-
-Native data is transparently replaced by Typed data by ES6 [Proxy](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Proxy).
-
-## ESM
-
-```js
-import { Type, isType } from "./dist/build/modules/self-type.js";
-```
-
-## CJS
-
-### npm
-
-Using npm:
-
-```sh
-$ npm i self-type
-```
-
-In Node.js:
-
-```js
-const { Type, isType } = require("self-type");
-```
-
-## Test
-
-```sh
-$ node -r esm ./dist/build/index.js
-```
-
-### ./test/test-self-type.js
-
-
-```js
 import { log } from "./log.js";
-import { Type, isType } from "../modules/self-type.js";
-const test_self_type = () => {
+import { Type, isType } from "../modules/typeself.js";
+const test_typeself = () => {
     log("=Are you a member??? ========= ");
     const Member = (a) => Type(Member)(a);
     const alice = "Alice";
@@ -53,11 +13,11 @@ const test_self_type = () => {
     const specialOperation = (f) => Type(specialOperation)(f);
     const f1 = (a) => a + 1; //vanilla function
     const f2 = Type(specialOperation) //typed function
-        ((a) => {
-            //This function might be considered to be "special" 
-            //because it does some featured operations in a context.
-            return a * 2;
-        });
+    ((a) => {
+        //This function might be considered to be "special" 
+        //because it does some featured operations in a context.
+        return a * 2;
+    });
     log(isType(specialOperation)(f1)); //false
     log(f1(1) // f1 = a => a +1
     ); //2  // just in case, let you know
@@ -118,8 +78,6 @@ const test_self_type = () => {
     );
     log("check---------------------------");
     const n = Type(I)(6);
-    log(n.toString());//6
+    log(n.toString());
 };
-export { test_self_type };
-
-```
+export { test_typeself };

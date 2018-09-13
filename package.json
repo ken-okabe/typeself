@@ -1,0 +1,21 @@
+{
+  "name": "typeself",
+  "version": "0.9.1",
+  "description": "",
+  "main": "./index.js",
+  "module": "./dist/build/modules/typeself.js",
+  "scripts": {
+    "test": "node -r esm ./dist/build/index.js"
+  },
+  "repository": "git+https://github.com/kenokabe/typeself.git",
+  "keywords": [],
+  "author": "kenokabe <kenokabe@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kenokabe/typeself/issues"
+  },
+  "homepage": "https://github.com/kenokabe/typeself#readme",
+  "devDependencies": {
+    "esm": "^3.0.82"
+  }
+}
