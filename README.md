@@ -40,7 +40,7 @@ $ node -r esm ./dist/build/index.js
 ```js
 import { log } from "./log.js";
 import { Type, isType } from "../modules/typeself.js";
-const test_self_type = () => {
+const test_typeself = () => {
     log("=Are you a member??? ========= ");
     const Member = (a) => Type(Member)(a);
     const alice = "Alice";
