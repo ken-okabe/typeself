@@ -120,6 +120,6 @@ const test_typeself = () => {
     const n = Type(I)(6);
     log(n.toString());//6
 };
-export { test_self_type };
+export { test_typeself };
 
 ```
