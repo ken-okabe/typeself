@@ -1,11 +1,12 @@
 
+
 # typeself provides self-referential types to JavaScript/TypeScript
 
 JavaScript only has basic [Data types](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Grammar_and_types#Data_structures_and_types) and [typeof ](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/typeof)operator returns a string indicating the type of the unevaluated operand.
 
 [TypeScript](http://www.typescriptlang.org/) brings you optional static type-checking, however, it does not provide a type that has a totally unique property.
 
-[typeself](https://www.npmjs.com/package/typeself) (https://github.com/kenokabe/typeself)
+[typeself](https://www.npmjs.com/package/typeself) ( https://github.com/kenokabe/typeself )
 
 provides a unique self-referential type with the name of the function.
 
@@ -45,7 +46,7 @@ isType(Member)(bob)
 
 The original concept introduced in [SICP](http://mitpress.mit.edu/sites/default/files/sicp/index.html) as "TypeTag".
  
- ## ESM
+## ESM
 
 ES Modules are distributed as
 
