@@ -15,7 +15,7 @@
     "url": "https://github.com/kenokabe/typeself/issues"
   },
   "homepage": "https://github.com/kenokabe/typeself#readme",
-  "devDependencies": {
+  "dependencies": {
     "esm": "^3.0.82"
   }
 }
